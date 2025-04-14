@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI';
+    background-color: #B6D8F2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Titre de la page */
+h2 {
+    font-size: 2.3rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Section de l'ajout des tâches */
+.task-input-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #D1D8E0;
+    border-radius: 5px;
+    background-color: #F9FBFF;
+    color: #2E3A59;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #3A4858;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+#addTaskBtn {
+    background-color: #F4CFDF; 
+    color: white;
+}
+
+#addTaskBtn:hover {
+    background-color: #E8AABE;
+}
+
+/* Section des listes de tâches */
+.task-lists {
+    display: flex;
+    gap: 105px;
+    margin-bottom: 34px;
+}
+
+.list-container {
+    flex: 1;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F7F6CF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    width: 297px;
+    background-color: #F9FBFF;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #2E3A59;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+ul li.done {
+    background-color: #D1E7DD; 
+    text-decoration: line-through;
+}
+
+ul li:hover {
+    background-color: #F0F4F8;
+    transform: translateY(-2px);
+}
+
+ul li .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #4AA3A2;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+ul li .actions button:hover {
+    color: #111824;
+}
+
+/* Boutons charger et sauvegarder */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#loadBtn {
+    background-color: #9AC8EB;
+    color: white;
+}
+
+#loadBtn:hover {
+    background-color: #5784BA;
+}
+
+#saveBtn {
+    background-color: #F4CFDF;
+    color: white;
+}
+
+#saveBtn:hover {
+    background-color: #E8AABE;
+}
